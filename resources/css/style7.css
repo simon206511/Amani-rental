@@ -1,0 +1,86 @@
+.home {
+    position: absolute;
+    top: 0;
+    left: 250px;
+    height: 100vh;
+    width: calc(100% - 250px);
+    background-color: var(--body-color);
+    transition: var(--tran-05);
+}
+
+.home.text {
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--text-color);
+    padding: 12px 60px;
+}
+
+.dash-content {
+    padding: 20px;
+}
+
+.overview {
+    background-color: var(--primary-color-light);
+    padding: 20px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.title.icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box {
+    background-color: var(--primary-color-light);
+    padding: 20px;
+    border-radius: 6px;
+    width: calc(33.33% - 10px);
+    margin: 10px;
+}
+
+.box.icon {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.box.text {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.box.number {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.sidebar.close ~.home {
+    left: 78px;
+    height: 100vh;
+    width: calc(100% - 78px);
+}
+
+body.dark.home.text {
+    color: var(--text-color);
+}
+.view-list {
+    font-size: 16px;
+    color: #337ab7;
+    text-decoration: none;
+}
+
+.view-list:hover {
+    color: #23527c;
+}
